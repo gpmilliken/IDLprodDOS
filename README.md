@@ -7,7 +7,9 @@ idlreset.c
 Attaches to the supervisor object, and does a reset WITHOUT the user having supervisor level privs
 
 makeobj.c
-Makes a "supervisor" class object in the NetWare bindery
+Makes a "supervisor" class object in the NetWare bindery, run this once first
+
+Note in 1994 hardcoded passwords was not abnormal, and hackers were still reading 2600 magazine. The world was a much safer place than in 2024. Today, we know we should never hard code a password.
 
 By    : George Milliken
 
@@ -19,9 +21,11 @@ Free Distribution, attribution mandatory, fees optional
 ```
 
 _Notes from 12-10-2024_
+
 This program does a really neat trick that was impossible in 1994. It allowed us to create a special object in the bindery and then delegate the authoirty to reset passwords to help desk users. They used a Visual Basic program that connected to that object and then performewd the password reset. This was a game changer for Wells Fargo Bank help desk. Prior to the program existing a large number of tellers and other people were locked out accidentally everydya and had to call the help desk. his program cut the call time and made the reset very easy becuase a low level non technical employee could reset a password.
 
 _Notes from 1994_
+
 This program attempts to attach and login to another server under a
 help desk ID.  Then perform a password reset on the Target User.
 
